@@ -5,6 +5,7 @@
 .nav-1unit-ul .abu {
   color: #3e363f;
   border-bottom: 2px solid #3e363f;
+  
 }
 
 .header {
@@ -591,7 +592,7 @@ li {
 }
 /* last part */
 
-aside {
+aside img{
   width: 35%;
   height: 350px;
   padding: 15px;
@@ -940,9 +941,9 @@ cataloge */
 }
 
 .amat30 img {
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
-  margin: 10px;
+  margin: 20px;
   margin-top: 80px;
 }
 
@@ -1004,10 +1005,9 @@ cataloge */
 /* a-dec 500 */
 .adev500 {
   margin: 10% 20%;
-
-  width: 100%;}
-embed{
-  max-width:650px;
+  width: 80%;}
+embed {
+  max-width:550px;
   width: 100%;
    height:500px;
 }
@@ -1095,18 +1095,20 @@ embed{
 /* register */
 
 #form {
-  width: 400px;
-  margin: 0 40px;
+  max-width: 300px;
   background-color: whitesmoke;
   border-radius: 5px;
-  padding: 30px;
+  margin-left: 135px;
+
 }
 #formal {
-  width: 400px;
-  margin: 0 40px;
+  max-width: 300px;
+  
   background-color: whitesmoke;
   border-radius: 5px;
   padding: 30px;
+  margin-left:-40px ;
+  
 }
 
 h1 {
@@ -1161,9 +1163,9 @@ h1 {
 
 .container {
   margin-top: 0%;
-  margin-left: -20px;
-  height: 600px;
-  width: 500px;
+  margin-left: -20p;
+  height: 550px;
+  width: 300px;
   background-color: white;
   box-shadow: 8px 8px 20px rgb(128, 128, 128);
   position: relative;
@@ -1171,9 +1173,9 @@ h1 {
 }
 
 .btn {
-  height: 60px;
-  width: 300px;
-  margin: 20px auto;
+  height: 40px;
+  width: 150px;
+  margin: 10px auto;
   box-shadow: 10px 10px 30px #e6c7e5;
   border-radius: 50px;
   display: flex;
@@ -1183,6 +1185,7 @@ h1 {
 
 .login,
 .signup {
+  
   font-size: 22px;
   border: none;
   outline: none;
@@ -1192,22 +1195,22 @@ h1 {
 }
 
 .slider {
-  height: 60px;
-  width: 150px;
+  height: 40px;
+  width: 80px;
   border-radius: 50px;
+  top: 10px;
+  left: 70px;
   background-image: linear-gradient(to right, #73a586, #c2f8cb);
   position: absolute;
-  top: 20px;
-  left: 100px;
   transition: all 0.5s ease-in-out;
 }
 .moveslider {
-  left: 250px;
+  left: 150px;
 }
 
 .form-section {
   height: 500px;
-  width: 800px;
+  width: 500px;
   padding: 20px 0;
   display: flex;
   position: relative;
@@ -1465,12 +1468,12 @@ main p {
 .a-item {
   color: white;
 }
-.map-item {
-  max-width: 500px;
+/* .map-item {
+  max-width: 200px;
   width: 100%;
-  height: 400px;
+  height: 200px;
   margin-top: 20px;
-}
+} */
 .left-item {
   padding-bottom: 20px;
   margin: 20px;

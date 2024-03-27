@@ -5,9 +5,12 @@
 * Browsers: last 4 version
 */
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
   .header .icon-h2 {
     font-size: 18px;
+  }
+  .div-corol {
+    width: 100%;
   }
 
   .ham-menu span {
@@ -39,8 +42,9 @@
     inset: auto 5px 5px 5px;
   }
   .thumbnail .items {
-    width: 120px;
-    height: 150px;
+    max-width: 120px;
+    width: 100%;
+    height: 100px;
   }
   .al {
     padding-left: 7px;
@@ -92,8 +96,6 @@
   }
 
   .dental-parts {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: auto;
   }
@@ -128,21 +130,15 @@
     position: relative;
     width: 150px;
     height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     margin-bottom: 30px;
   }
   /* aside */
 
-  aside {
+  aside  {
     width: 35%;
     height: 350px;
     padding: 15px;
@@ -152,6 +148,9 @@
     font-style: italic;
     /* background-color: lightgray; */
   }
+  aside img {
+    width: 100%;
+  } 
   .aside-text {
     width: 100%;
     height: 150px;
@@ -178,102 +177,9 @@
     margin-bottom: 50px;
   }
 
-  #formal {
-    width: 300px;
-    margin-left: -40px;
-    background-color: whitesmoke;
-    border-radius: 5px;
-  }
-  #form {
-    width: 300px;
-    margin-left: 80px;
-    background-color: whitesmoke;
-    border-radius: 5px;
-  }
-
-  #form button,
-  #formal button {
-    background-color: #792099;
-    color: white;
-    border: 1px solid #792099;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px 0px;
-    cursor: pointer;
-    font-size: 20px;
-    width: 100%;
-  }
-
-  .input-group {
-    margin-bottom: 7px;
-  }
-
-  .input-group input {
-    font-size: 10px;
-  }
-
-  .input-group input:focus {
-    outline: 0;
-  }
-
-  .container {
-    margin-top: 30%;
-    height: 500px;
-    width: 300px;
-  }
-
-  .btn {
-    height: 40px;
-    width: 150px;
-    margin: 10px auto;
-    border-radius: 50px;
-  }
-
-  .login,
-  .signup {
-    font-size: 22px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    position: relative;
-    cursor: pointer;
-  }
-  .slider {
-    height: 40px;
-    width: 80px;
-    border-radius: 50px;
-    top: 10px;
-    left: 70px;
-  }
-  .moveslider {
-    left: 150px;
-  }
-  .form-section {
-    height: 500px;
-    width: 500px;
-    padding: 20px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-
-    -webkit-transition: all 0.5s ease-in-out;
-
-    -o-transition: all 0.5s ease-in-out;
-
-    transition: all 0.5s ease-in-out;
-    left: 0px;
-  }
-
-  .form-section-move {
-    left: -500px;
-  }
-
+  
   .img-container1 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
   }
   .div-corol {
@@ -297,10 +203,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .amat30 img {
-    max-width: 200px;
-    width: 100%;
-  }
+ 
   .section-adev {
     max-width: 600px;
     width: 100%;
@@ -318,9 +221,59 @@
     font-size: 21px;
     margin-left: -65%;
   }
+  .amat30 {
+    max-width: 400px;
+    width: 100%;
+    height: 600px;
+    vertical-align: middle;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 700px;
+    margin-left: -30px;
+    background: none;
+  }
+
+  .amat30 img:nth-child(1) {
+    position: absolute;
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    /* vertical-align: middle; */
+    top: 50px;
+  }
+  .amat30 img:nth-child(2) {
+    position: absolute;
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    /* vertical-align: middle; */
+    top: 400px;
+  }
+  .amat30 img:nth-child(3) {
+    position: absolute;
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    /* vertical-align: middle; */
+    top: 800px;
+  }
+  .asid30 p {
+    font-size: 16px;
+}
+.iframes {
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  margin-top: 20%;
+  margin-left: 13%;
+  
+}
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .header {
     width: 100%;
   }
@@ -339,66 +292,56 @@
   }
 
   .slid {
-    height: 400px;
-    width: 90%;
-    top: 50px;
-    margin: 0 auto;
-    position: relative;
+    height: 350px;
+    width: 100%;
+    top: 40px;
   }
+
   .slid .list .item .content h2 {
-    /* font-size: 100px; */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
+
   .slid .list .item .content p:nth-child(1) {
-    text-transform: uppercase;
-    letter-spacing: 12px;
+    letter-spacing: 5px;
   }
+
   .al {
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: 100;
   }
 
   .slid .list .item img {
-    max-width: 60vh;
-    width: 70%;
-    height: 70%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    margin-left: 15%;
-    padding-bottom: 0;
+    max-width: 50vh;
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
   }
-  .thumbnail .items img {
+
+  .thumbnail {
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    gap: 1px;
     width: 90%;
+    height: auto;
+    margin-bottom: 35%;
+    overflow: auto;
+    justify-content: center;
+  }
+
+  .thumbnail .items img {
+    max-width: 300px;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    width: 90%;
   }
-  .thumbnail .items .content {
-    position: absolute;
-    inset: auto 5px 5px 5px;
-  }
+
   .thumbnail .items {
-    width: 80px;
-    height: 100px;
-    bottom: 0;
+    width: 50px;
+    height: 60px;
   }
-  #prev {
-    background: #515;
-    width: 30px;
-    position: absolute;
-    bottom: 15px;
-    margin-left: 55%;
-    z-index: 330;
-  }
-  #next {
-    background: #515;
-    width: 30px;
-    position: absolute;
-    bottom: 15px;
-    margin-left: 40%;
-    z-index: 330;
-  }
+
   /* parts */
   .dentalparts-maindiv {
     height: auto;
@@ -406,10 +349,7 @@
   }
 
   .dental-parts {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: auto;
   }
 
@@ -449,8 +389,6 @@
     position: relative;
     width: 300px;
     height: 150px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     border-radius: 20px;
     margin-bottom: 30px;
@@ -459,7 +397,8 @@
   /*neon   */
   .card {
     cursor: pointer;
-    width: 420px;
+    max-width: 400px;
+    width: 100%;
     /* width: 100px; */
     height: 400px;
     position: relative;
@@ -473,10 +412,13 @@
 
   aside {
     
-    width: 90%;
+    width: 80%;
     height: auto;
-    margin-top: 0;
+    margin-top: -40%;
     float: none;
+  }
+  aside img {
+    width: 100%;
   }
 
   .aside-text {
@@ -518,10 +460,7 @@
 
   .div-corol {
     height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .map-item {
     width: 50%;
@@ -553,12 +492,15 @@
     height: 400px;
     margin-top: 100px;
   }
-  .amat30 img {
-    max-width: 150px;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 3px;
-  }
+ 
+ 
+
+  .nav-1unit-ul .abu {
+      color: #3e363f;
+      border-bottom: 2px solid #3e363f;
+      font-size: 20px;
+      
+    }
   .mc18 {
     margin-top: 30px;
   }
@@ -588,16 +530,164 @@
      margin-left: -30px;
   }
   .iframes {
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
-    height: 400px;
+    height: 300px;
     margin-top: 20%;
     margin-left: 13%;
     
   }
-}
+  #formal {
+    width: 230px;
+    margin-left: -30px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+  }
+  #form {
+    width: 230px;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+  }
 
-@media only screen and (max-width: 320px) {
+  #form button,
+  #formal button {
+    background-color: #792099;
+    color: white;
+    border: 1px solid #792099;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .input-group {
+    margin-bottom: 7px;
+  }
+
+  .input-group input {
+    font-size: 10px;
+  }
+
+  .input-group input:focus {
+    outline: 0;
+  }
+
+  .container {
+    margin-top: 30%;
+    height: 500px;
+    width: 250px;
+  }
+
+  .btn {
+    height: 40px;
+    width: 130px;
+    margin: 10px auto;
+    border-radius: 50px;
+  }
+
+  .login,
+  .signup {
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .slider {
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+    top: 10px;
+    left: 30px;
+  }
+  .moveslider {
+    left: 120px;
+  }
+  .form-section {
+    height: 400px;
+    width: 200px;
+    padding: 20px 0;
+    display: flex;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    left: 0px;
+  }
+
+  .form-section-move {
+    left: -330px;
+  }
+  .nav-1unit-ul li{
+    font-size: 20px;
+    font-weight:normal ;
+  }
+
+  .img-container img{
+    max-width: 350px;
+    width: 90%;
+    height: 300px;
+    /* justify-content: center; */
+    margin: 50px;
+    margin-top: 200px;
+  }
+  .img-container {
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+    margin-left: -60px;
+    /* justify-content: center; */
+    }
+.img-container1 {
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;}
+
+   .amat30 {
+      max-width: 400px;
+      width: 90%;
+      height: 300px;
+      vertical-align: middle;
+      position: relative;
+      margin-top: 50px;
+      margin-bottom: 700px;
+      left: 10%;
+    }
+  
+    .amat30 img:nth-child(1) {
+      position: absolute;
+      display: block;
+      max-width: 80%;
+      height: auto;
+      margin: auto;
+      /* vertical-align: middle; */
+      top: 50px;
+    }
+    .amat30 img:nth-child(2) {
+      position: absolute;
+      display: block;
+      max-width: 80%;
+      height: auto;
+      margin: auto;
+      /* vertical-align: middle; */
+      top: 300px;
+    }
+    .amat30 img:nth-child(3) {
+      position: absolute;
+      display: block;
+      max-width: 80%;
+      height: auto;
+      margin: auto;
+      /* vertical-align: middle; */
+      top: 600px;
+    }
+    .asid30 p {
+      font-size: 16px;
+  }
+
+@media (max-width: 320px) {
   .header {
     width: 100%;
 
@@ -653,7 +743,7 @@
     padding: 0 5px;
   }
 
-  .slid {
+  /* .slid {
     height: 350px;
     width: 100%;
     top: 40px;
@@ -684,29 +774,25 @@
   .thumbnail {
     position: absolute;
     z-index: 11;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    gap: 5px;
-    width: 100%;
+    gap: 1px;
+    width: 90%;
     height: auto;
     margin-bottom: 35%;
     overflow: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 
   .thumbnail .items img {
-    max-width: 400px;
+    max-width: 300px;
     height: 100%;
-    width: 100%;
+    width: 90%;
   }
 
   .thumbnail .items {
     width: 50px;
     height: 60px;
-  }
+  } */
 
   #prev {
     margin-left: 50%;
@@ -769,15 +855,10 @@
 
   .mailcall {
     margin-left: 3px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 
-  .map-item {
-    display: none;
-  }
+
 
   .left-item {
     width: 100%;
@@ -798,14 +879,6 @@
     border-bottom: none;
   }
 
-  .amat30 img:nth-last-child(1) {
-    display: none;
-  }
-
-  .amat30 img:nth-last-child(3) {
-    display: none;
-  }
-
   .img-container1 img {
     margin-left: 25px;
     width: 250px;
@@ -813,7 +886,8 @@
   }
 
   .img-container {
-    margin-top: 70px;
+    margin-top: 20px;
+    margin-left: 10px;
   }
 
   .footer-div {
@@ -855,44 +929,7 @@
     height: 250px;
     margin-top: 100px;
   }
-  .amat30 {
-    width: 300px;
-    height: 300px;
-    vertical-align: middle;
-    position: relative;
-    margin-top: 50px;
-    margin-bottom: 700px;
-  }
-
-  .amat30 img:nth-child(1) {
-    position: absolute;
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    /* vertical-align: middle; */
-    top: 50px;
-  }
-  .amat30 img:nth-child(2) {
-    position: absolute;
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    /* vertical-align: middle; */
-    top: 300px;
-  }
-  .amat30 img:nth-child(3) {
-    position: absolute;
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    /* vertical-align: middle; */
-    top: 600px;
-  }
-  .asid30 p {
-    font-size: 16px;
+  
   }
   .mc18 {
     margin-top: 50px;
@@ -965,3 +1002,5 @@ margin-top: 30%;
 }
 
 }
+  
+
